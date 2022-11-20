@@ -10,17 +10,13 @@ ul {
   list-style: none;
 }
 
-img {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 body {
-  background: #f2f4f4;
+  background: #252525;
 }
 
 html {
@@ -28,21 +24,6 @@ html {
 }
 
 /* DISPLAY */
-
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem;
-  width: 120rem;
-}
-
-.btn {
-  border: none;
-  border-radius: 3px;
-  padding: 1.4rem;
-  background-color: seagreen;
-  cursor: pointer;
-}
 
 /* UTILITY */
 
