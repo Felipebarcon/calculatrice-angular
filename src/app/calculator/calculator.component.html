@@ -1,99 +1,58 @@
 <div class="calculator">
 
+  <!--  INPUT FIELD -->
+
   <input
+    [value]="currentNumber"
     class="calculator-screen"
     disabled
     type="text"
-    value="0"
   />
+
+  <!--  CALC KEYS -->
 
   <div class="calculator-keys">
 
     <button
+      (click)="getOperation('+')"
       class="operator"
       type="button"
       value="+"
     >+
     </button>
     <button
+      (click)="getOperation('-')"
       class="operator"
       type="button"
       value="-"
     >-
     </button>
     <button
+      (click)="getOperation('*')"
       class="operator"
       type="button"
       value="*"
     >&times;
     </button>
     <button
+      (click)="getOperation('/')"
       class="operator"
       type="button"
       value="/"
     >&divide;
     </button>
 
-    <button
-      type="button"
-      value="7"
-    >7
-    </button>
-    <button
-      type="button"
-      value="8"
-    >8
-    </button>
-    <button
-      type="button"
-      value="9"
-    >9
-    </button>
+    <!-- [...] -->
 
     <button
-      type="button"
-      value="4"
-    >4
-    </button>
-    <button
-      type="button"
-      value="5"
-    >5
-    </button>
-    <button
-      type="button"
-      value="6"
-    >6
-    </button>
-
-    <button
-      type="button"
-      value="1"
-    >1
-    </button>
-    <button
-      type="button"
-      value="2"
-    >2
-    </button>
-    <button
-      type="button"
-      value="3"
-    >3
-    </button>
-
-    <button
-      type="button"
-      value="0"
-    >0
-    </button>
-    <button
+      (click)="getDecimal()"
       class="decimal"
       type="button"
       value="."
     >.
     </button>
     <button
+      (click)="clear()"
       class="all-clear"
       type="button"
       value="all-clear"
@@ -101,10 +60,77 @@
     </button>
 
     <button
+      (click)="getOperation('=')"
       class="equal-sign"
       type="button"
       value="="
     >=
+    </button>
+
+    <!--  CALC NUMBER -->
+
+    <button
+      (click)="getNumber('7')"
+      type="button"
+      value="7"
+    >7
+    </button>
+    <button
+      (click)="getNumber('8')"
+      type="button"
+      value="8"
+    >8
+    </button>
+    <button
+      (click)="getNumber('9')"
+      type="button"
+      value="9"
+    >9
+    </button>
+
+    <button
+      (click)="getNumber('4')"
+      type="button"
+      value="4"
+    >4
+    </button>
+    <button
+      (click)="getNumber('5')"
+      type="button"
+      value="5"
+    >5
+    </button>
+    <button
+      (click)="getNumber('6')"
+      type="button"
+      value="6"
+    >6
+    </button>
+
+    <button
+      (click)="getNumber('1')"
+      type="button"
+      value="1"
+    >1
+    </button>
+    <button
+      (click)="getNumber('2')"
+      type="button"
+      value="2"
+    >2
+    </button>
+    <button
+      (click)="getNumber('3')"
+      type="button"
+      value="3"
+    >3
+    </button>
+
+    <button
+      (click)="getNumber('0')"
+      type="button"
+      value="0"
+    >0
     </button>
 
   </div>
