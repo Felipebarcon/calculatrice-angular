@@ -1,0 +1,39 @@
+.nav {
+  background-color: #15133c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--title {
+  font-size: 3rem;
+}
+
+.nav--list-ul {
+  display: flex;
+  gap: 6rem;
+}
+
+.nav--list-ul li:hover {
+  color: gold;
+}
+
+.nav--list-ul li {
+  font-size: 4rem;
+}
+
+.nav--list-ul:last-child {
+  margin-right: 4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav--list-li:hover {
+  color: coral;
+  transition: 0.5s;
+}
+
+.nav--logo {
+  width: 15rem;
+}

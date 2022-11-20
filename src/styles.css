@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: #f2f4f4;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* DISPLAY */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  width: 120rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  padding: 1.4rem;
+  background-color: seagreen;
+  cursor: pointer;
+}
+
+/* UTILITY */
+
+.p-10 {
+  padding: 1rem;
+}
+
+.p-20 {
+  padding: 2rem;
+}
+
+.pr-10 {
+  padding-right: 1rem;
+}
+
+.pl-10 {
+  padding-left: 1rem;
+}
+
+.m-10 {
+  margin: 1rem;
+}
+
+.m-20 {
+  margin: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.ml-10 {
+  margin-left: 1rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* DEBUG */
+
+.d1 {
+  border: solid red 1px;
+}
+
+.d2 {
+  border: solid blue 1px;
+}
