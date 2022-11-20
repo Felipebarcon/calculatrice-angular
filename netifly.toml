@@ -1,7 +1,17 @@
 [build]
-publish = "dist/anglify"
-command = "ng build --prod"
+command = "ng build"
+publish = "dist/angular-quickstart"
+
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
+
+[[plugins]]
+package = "netlify-plugin-cypress"
+
+[plugins.inputs.postBuild]
+enable = true
+
+[plugins.inputs]
+enable = false
